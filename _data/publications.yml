@@ -1,9 +1,9 @@
 main:
 
-  - title: SyncFeel: Wearable Multi-Modal Rhythm Stimulation for Attention Enhancement
-    authors: Sarah Jade Pratt, <strong>Alex Noh</strong>
+  - title: "SyncFeel: Wearable Multi-Modal Rhythm Stimulation for Attention Enhancement"
+    authors: "Sarah Jade Pratt, <strong>Alex Noh</strong>"
     conference_short: UIST
-    conference: ACM Symposium on User Interface and Software Technology <strong>(UIST)</strong>, 2025.
+    conference: "ACM Symposium on User Interface and Software Technology <strong>(UIST)</strong>, 2025."
     pdf: https://dl.acm.org/doi/10.1145/3746058.3758974
     code:
     bibtex:
