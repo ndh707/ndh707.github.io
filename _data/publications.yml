@@ -1,5 +1,15 @@
 main:
 
+  - title: "Exploring Diminished Reality for Attention Support: A Co-Design Study with Students with ADHD"
+    authors: "<strong>Alex Noh</strong>, Safikhani Parastoo, Anjun Kim, Wolfgang Stuerzlinger, Lawrence Kim"
+    conference_short: DIS '26
+    conference: "Designing Interactive Systems <strong>(DIS)</strong>, 2026."
+    pdf:
+    code:
+    bibtex:
+    image:
+    notes: Conditionally Accepted
+
   - title: "SyncFeel: Wearable Multi-Modal Rhythm Stimulation for Attention Enhancement"
     authors: "Sarah Jade Pratt, <strong>Alex Noh</strong>"
     conference_short: UIST
