@@ -13,10 +13,11 @@ Additionally, I have had various non-research experience, including teaching, wo
 
 ## News
 
+- **[Mar. 2026]** Our paper _Exploring Diminished Reality for Attention Support: A Co-Design Study with Students with ADHD_ has been conditionally accepted at DIS 2026!  
 - **[Mar. 2026]** I was nominated for an exchange semester at KAIST for Fall 2026. Looking forward to meeting new people and learning from some of the best HCI researchers around.  
 - **[Mar. 2026]** I was selected for VPRI USRA with Dr. Parmit for Summer 2026.  
 - **[Oct. 2025]** I was selected as the recipient of Hy Aisenstat Scholarship.  
-- **[Sept. 2025]** Our paper _SyncFeel: Wearable Multi-Modal Rhythm Stimulation for Attention Enhancement_ has been accepted as a finalist for 2025 UIST Student Innovation Contest!  
+- **[Sept. 2025]** Our paper _SyncFeel: Wearable Multi-Modal Rhythm Stimulation for Attention Enhancement_ has been accepted as a finalist for UIST 2025 Student Innovation Contest!  
 
 {% include_relative _includes/publications.md %}
 
