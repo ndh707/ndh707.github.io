@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.amazon.com)",
+      "WebFetch(domain:sokoglam.com)",
+      "WebFetch(domain:livekbeauty.com)",
+      "WebFetch(domain:www.iherb.com)",
+      "WebFetch(domain:www.sayweee.com)",
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:kleverbeautybox.com)",
+      "WebFetch(domain:www.kpopbeauty.com)",
+      "WebFetch(domain:jolse.com)",
+      "WebFetch(domain:www.yamibuy.com)",
+      "WebFetch(domain:koreacrate.com)",
+      "WebFetch(domain:munchaddict.com)",
+      "WebFetch(domain:www.lengbox.com)",
+      "WebFetch(domain:www.hmart.com)",
+      "WebFetch(domain:www.yesstyle.com)",
+      "WebFetch(domain:www.yami.com)",
+      "WebFetch(domain:www.peachandlily.com)",
+      "WebFetch(domain:beautyofjoseon.com)",
+      "WebFetch(domain:thebeautyspy.com)",
+      "WebFetch(domain:d1flfk77wl2xk4.cloudfront.net)",
+      "WebFetch(domain:en.koreadepart.com)",
+      "WebFetch(domain:facetreasures.com)",
+      "WebFetch(domain:gochujar.com)",
+      "WebFetch(domain:gyks.shop)",
+      "WebFetch(domain:k-oneshop.com)",
+      "WebFetch(domain:seoulinspired.com)",
+      "WebFetch(domain:www.drjart.com)",
+      "WebFetch(domain:kbeautyworld.com)",
+      "WebFetch(domain:hmartus.vtexassets.com)",
+      "WebFetch(domain:img06.weeecdn.com)",
+      "WebFetch(domain:wanderwithjin.com)",
+      "WebFetch(domain:i0.wp.com)"
+    ]
+  }
+}
