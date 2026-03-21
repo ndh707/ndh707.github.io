@@ -3,21 +3,21 @@
 // =============================================================================
 const HERO_IMAGES = {
   main:     "https://picsum.photos/seed/haru-hero-main/1200/500",
-  seasonal: "https://picsum.photos/seed/haru-hero-summer/1200/500",
-  mystery:  "https://picsum.photos/seed/haru-hero-mystery/1200/500",
-  snacks:   "https://picsum.photos/seed/haru-hero-snacks/1200/500",
-  giftbox:  "https://picsum.photos/seed/haru-hero-gifts/1200/500",
+  seasonal: "img/carousel_1.png",
+  mystery:  "img/carousel_2.png",
+  snacks:   "img/snack_img.png",
+  giftbox:  "img/carousel_3.png",
 };
 
 const PRODUCT_IMAGES = {
-  1:  "https://picsum.photos/seed/prod-cleanser-1/400/400",
-  2:  "https://picsum.photos/seed/prod-essence-snail/400/400",
-  3:  "https://picsum.photos/seed/prod-toner-soonjung/400/400",
-  4:  "https://picsum.photos/seed/prod-sunscreen-roundlab/400/400",
-  5:  "https://picsum.photos/seed/prod-essence-mugwort/400/400",
-  6:  "https://picsum.photos/seed/prod-serum-joseon/400/400",
-  7:  "https://picsum.photos/seed/prod-serum-purito/400/400",
-  8:  "https://picsum.photos/seed/prod-toner-anua/400/400",
+  1:  "img/shop_img1.webp",
+  2:  "img/shop_img2.jpg",
+  3:  "img/shop_img3.webp",
+  4:  "img/shop_img4.webp",
+  5:  "img/shop_img5.jpg",
+  6:  "img/shop_img6.webp",
+  7:  "img/shop_img7.avif",
+  8:  "img/shop_img8.webp",
   9:  "https://picsum.photos/seed/prod-cream-iunik/400/400",
   10: "https://picsum.photos/seed/prod-sunstick-missha/400/400",
   11: "https://picsum.photos/seed/prod-toner-somebymi/400/400",
