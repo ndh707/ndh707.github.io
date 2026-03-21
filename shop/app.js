@@ -1,40 +1,33 @@
 // =============================================================================
 // DATA
 // =============================================================================
-const HERO_IMAGES = {
-  main:     "https://picsum.photos/seed/haru-hero-main/1200/500",
-  seasonal: "img/carousel_1.png",
-  mystery:  "img/carousel_2.png",
-  snacks:   "img/snack_img.png",
-  giftbox:  "img/carousel_3.png",
-};
 
 const PRODUCT_IMAGES = {
   1:  "img/shop_img1.webp",
   2:  "img/shop_img2.jpg",
   3:  "img/shop_img3.webp",
   4:  "img/shop_img4.webp",
-  5:  "img/shop_img5.jpg",
+  5:  "https://d1flfk77wl2xk4.cloudfront.net/Assets/i-m-from-mugwort-essence-160ml/79/675/XXL_p0088967579.jpg",
   6:  "img/shop_img6.webp",
-  7:  "img/shop_img7.avif",
-  8:  "img/shop_img8.webp",
-  9:  "https://picsum.photos/seed/prod-cream-iunik/400/400",
-  10: "https://picsum.photos/seed/prod-sunstick-missha/400/400",
-  11: "https://picsum.photos/seed/prod-toner-somebymi/400/400",
-  12: "https://picsum.photos/seed/prod-mask-vt/400/400",
-  13: "https://picsum.photos/seed/prod-snack-honeybutter/400/400",
-  14: "https://picsum.photos/seed/prod-snack-chocopie/400/400",
-  15: "https://picsum.photos/seed/prod-snack-tteokbokki/400/400",
-  16: "https://picsum.photos/seed/prod-snack-bananakick/400/400",
-  17: "https://picsum.photos/seed/prod-snack-pepero/400/400",
-  18: "https://picsum.photos/seed/prod-snack-shinramyun/400/400",
-  19: "https://picsum.photos/seed/prod-snack-yakgwa/400/400",
-  20: "https://picsum.photos/seed/prod-snack-seaweed/400/400",
-  21: "https://picsum.photos/seed/prod-giftbox-glassskin/400/400",
-  22: "https://picsum.photos/seed/prod-giftbox-mystery/400/400",
-  23: "https://picsum.photos/seed/prod-giftbox-snackbox/400/400",
-  24: "https://picsum.photos/seed/prod-giftbox-duo/400/400",
-  25: "https://picsum.photos/seed/prod-giftbox-summer/400/400",
+  7:  "https://d1flfk77wl2xk4.cloudfront.net/Assets/44/732/l_p0119073244.png",
+  8:  "https://d1flfk77wl2xk4.cloudfront.net/Assets/04/723/l_p0130772304.jpg",
+  9:  "https://d1flfk77wl2xk4.cloudfront.net/Assets/91/161/l_p0081516191.jpg",
+  10: "https://d1flfk77wl2xk4.cloudfront.net/Assets/26/434/l_p0204843426.jpg",
+  11: "https://d1flfk77wl2xk4.cloudfront.net/Assets/some-by-mi-aha-bha-pha-30-days-miracle-toner-150ml-150ml/32/799/XXL_p0089879932.jpg",
+  12: "https://d1flfk77wl2xk4.cloudfront.net/Assets/49/467/l_p0115846749.jpg",
+  13: "https://hmartus.vtexassets.com/arquivos/ids/162171/880101960894.png?v=638448911436600000",
+  14: "https://img06.weeecdn.com/item/image/686/676/3F8C40F7ABD5FCC7.jpg",
+  15: "https://img06.weeecdn.com/product/image/103/850/3A747663FED06CCC.png",
+  16: "https://img06.weeecdn.com/item/image/419/958/642C4879B1411B4A.jpeg",
+  17: "https://img06.weeecdn.com/product/image/917/626/5C59AA9FA8E847FE.png",
+  18: "https://hmartus.vtexassets.com/arquivos/ids/164158/file_54.png?v=638448919697700000",
+  19: "https://k-oneshop.com/cdn/shop/products/083dbffc3a98f2e2f1298bdaeacf625d.jpg?v=1670288228",
+  20: "https://img06.weeecdn.com/product/image/582/023/16E4A312DEAEC6F3.png",
+  21: "https://www.peachandlily.com/cdn/shop/files/Image_1_14_e2bd1ae4-919d-4eb8-881b-b1d1daf9455c.jpg?v=1769789782",
+  22: "https://facetreasures.com/cdn/shop/products/koreansetsphotoshot.jpg?v=1655142951",
+  23: "https://koreacrate.com/cdn/shop/files/Main_Image_202602_D.webp?v=1770544052",
+  24: "https://i0.wp.com/wanderwithjin.com/wp-content/uploads/2022/12/daebak_2.jpg?resize=800%2C800&ssl=1",
+  25: "https://www.peachandlily.com/cdn/shop/files/Image_01_NoRoundel.jpg?v=1763934470",
 };
 
 const PRODUCTS = [
@@ -80,44 +73,59 @@ const BADGE_COLORS = {
 
 const HERO_SLIDES = [
   {
-    id: "main", image: HERO_IMAGES.main,
+    id: "main",
     tagline: "Authentic Korean Beauty · Curated for You",
     titleHtml: (a) => `Your Daily Glow,<br><span style="font-style:italic;color:${a}">Delivered</span>`,
     desc: "Hand-picked K-beauty essentials from Seoul's most trusted brands. Glass skin starts here.",
-    overlay: "rgba(250,247,242,0.55)", accentColor: "#C46B89",
+    bg: "linear-gradient(135deg, #FAF7F2 0%, #F2D9E0 50%, #E8D5C4 100%)",
+    pattern: "repeating-linear-gradient(45deg, transparent, transparent 40px, #C46B89 40px, #C46B89 41px)",
+    patternOpacity: 0.08, accentColor: "#C46B89",
     buttons: [{label:"Shop All",action:"all",primary:true},{label:"Shop Serums",action:"serum",primary:false}],
+    emojis: ["✨","🧴","💧","🌿"],
   },
   {
-    id: "seasonal", image: HERO_IMAGES.seasonal,
+    id: "seasonal",
     tagline: "Limited Edition · Summer 2026",
     titleHtml: (a) => `Summer Glow<br><span style="font-style:italic;color:${a}">Collection</span>`,
     desc: "Lightweight SPFs, vitamin serums & cooling gels — everything your skin craves this season.",
-    overlay: "rgba(255,248,240,0.6)", accentColor: "#E8915A",
+    bg: "linear-gradient(135deg, #FFF8F0 0%, #FFE4CC 40%, #FFDAB9 100%)",
+    pattern: "radial-gradient(circle at 20% 50%, rgba(232,145,90,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 30%, rgba(255,180,100,0.12) 0%, transparent 50%)",
+    patternOpacity: 1, accentColor: "#E8915A",
     buttons: [{label:"Shop Seasonal",action:"gift-box",primary:true}],
+    emojis: ["☀️","🌸","🧊","💦"],
   },
   {
-    id: "mystery", image: HERO_IMAGES.mystery,
+    id: "mystery",
     tagline: "Can't Decide? Let Us Surprise You",
     titleHtml: (a) => `Mystery<br><span style="font-style:italic;color:${a}">Beauty Box</span>`,
     desc: "6+ full-size K-beauty products worth over $80. Every box is different — discover new holy grails!",
-    overlay: "rgba(245,240,250,0.6)", accentColor: "#9B7EC8",
+    bg: "linear-gradient(135deg, #F5F0FA 0%, #E8D9F5 50%, #D9CCE8 100%)",
+    pattern: "repeating-conic-gradient(rgba(155,126,200,0.06) 0% 25%, transparent 0% 50%)",
+    patternOpacity: 1, accentColor: "#9B7EC8",
     buttons: [{label:"Explore Gift Boxes",action:"gift-box",primary:true}],
+    emojis: ["✉️","🎁","🎀","✨"],
   },
   {
-    id: "snacks", image: HERO_IMAGES.snacks,
+    id: "snacks",
     tagline: "New Category · 맛있다!",
     titleHtml: (a) => `Korean Snacks,<br><span style="font-style:italic;color:${a}">Straight from Seoul</span>`,
     desc: "Honey butter chips, choco pies, yakgwa, shin ramyun — all the convenience store hits delivered to you.",
-    overlay: "rgba(255,251,240,0.6)", accentColor: "#D4853B",
+    bg: "linear-gradient(135deg, #FFFBF0 0%, #FFE8C8 50%, #FFDCAA 100%)",
+    pattern: "repeating-linear-gradient(-45deg, transparent, transparent 30px, rgba(212,133,59,0.07) 30px, rgba(212,133,59,0.07) 31px)",
+    patternOpacity: 1, accentColor: "#D4853B",
     buttons: [{label:"Shop Snacks",action:"snacks",primary:true},{label:"Seoul Snack Box",action:"gift-box",primary:false}],
+    emojis: ["🍯","🍜","🍫","🌶️"],
   },
   {
-    id: "giftbox", image: HERO_IMAGES.giftbox,
+    id: "giftbox",
     tagline: "The Perfect Gift · Curated Sets",
     titleHtml: (a) => `Gift Boxes<br><span style="font-style:italic;color:${a}">&amp; Bundles</span>`,
     desc: "Skincare sets, snack boxes, mystery bundles — beautifully packaged and ready to gift.",
-    overlay: "rgba(255,245,247,0.6)", accentColor: "#C46B89",
+    bg: "linear-gradient(135deg, #FFF5F7 0%, #F9DDE4 50%, #F2CEDB 100%)",
+    pattern: "radial-gradient(circle at 30% 70%, rgba(196,107,137,0.08) 0%, transparent 50%), radial-gradient(circle at 70% 20%, rgba(212,175,55,0.07) 0%, transparent 40%)",
+    patternOpacity: 1, accentColor: "#C46B89",
     buttons: [{label:"Browse Gift Boxes",action:"gift-box",primary:true}],
+    emojis: ["🎁","📦","🎀","🌸"],
   },
 ];
 
@@ -167,11 +175,6 @@ function scrollToTop() {
 // HERO CAROUSEL
 // =============================================================================
 function initHero() {
-  const bgContainer = document.getElementById("hero-backgrounds");
-  bgContainer.innerHTML = HERO_SLIDES.map((s, i) =>
-    `<div class="hero-bg-slide" style="background-image:url(${s.image});opacity:${i === 0 ? 1 : 0}" data-slide="${i}"></div>`
-  ).join("");
-
   renderHeroSlide();
   resetHeroTimer();
 }
@@ -180,13 +183,26 @@ function renderHeroSlide() {
   const slide = HERO_SLIDES[state.heroSlide];
   const accent = slide.accentColor;
 
-  // Update backgrounds
-  document.querySelectorAll(".hero-bg-slide").forEach((el, i) => {
-    el.style.opacity = i === state.heroSlide ? "1" : "0";
-  });
+  // Update gradient background on section
+  const heroEl = document.getElementById("hero-section");
+  heroEl.style.background = slide.bg;
 
-  // Overlay
-  document.getElementById("hero-overlay").style.background = slide.overlay;
+  // Pattern overlay
+  const patternEl = document.getElementById("hero-pattern");
+  patternEl.style.background = slide.pattern;
+  patternEl.style.opacity = slide.patternOpacity;
+
+  // Floating emojis
+  const emojiContainer = document.getElementById("hero-emojis");
+  emojiContainer.innerHTML = slide.emojis.map((e, i) => `
+    <span class="hero-emoji" style="
+      font-size:${28 + i * 6}px;
+      opacity:${0.13 + i * 0.03};
+      top:${15 + i * 20}%;
+      ${i % 2 === 0 ? 'left:' + (6 + i * 3) + '%' : 'right:' + (6 + i * 3) + '%'};
+      animation:floatEmoji${i} ${4 + i}s ease-in-out infinite;
+    ">${e}</span>
+  `).join("");
 
   // Content with fresh animation
   const content = document.getElementById("hero-content");
@@ -215,7 +231,7 @@ function renderHeroSlide() {
   dotsEl.innerHTML = HERO_SLIDES.map((_, i) =>
     `<button class="hero-dot" onclick="heroGoTo(${i})" aria-label="Slide ${i + 1}" style="
       width:${i === state.heroSlide ? 24 : 8}px;
-      background:${i === state.heroSlide ? accent : 'rgba(255,255,255,.55)'};
+      background:${i === state.heroSlide ? accent : 'rgba(44,36,32,.18)'};
     "></button>`
   ).join("");
 

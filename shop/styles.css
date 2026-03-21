@@ -32,6 +32,10 @@ input:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
 @keyframes notifIn { from { opacity: 0; transform: translateY(-10px) scale(.95); } to { opacity: 1; transform: translateY(0) scale(1); } }
 @keyframes heroFadeIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes progressBar { from { width: 0%; } to { width: 100%; } }
+@keyframes floatEmoji0 { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-12px) rotate(6deg); } }
+@keyframes floatEmoji1 { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-18px) rotate(-5deg); } }
+@keyframes floatEmoji2 { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-10px) rotate(4deg); } }
+@keyframes floatEmoji3 { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-15px) rotate(-7deg); } }
 
 /* ===== HEADER ===== */
 .site-header {
@@ -71,14 +75,17 @@ input:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
 .hero-section {
   position: relative; min-height: 340px; overflow: hidden;
   display: flex; align-items: center; justify-content: center;
+  transition: background 0.7s ease;
 }
-.hero-bg-slide {
-  position: absolute; inset: 0; background-size: cover; background-position: center;
-  transition: opacity 0.8s ease; z-index: 0;
+.hero-pattern {
+  position: absolute; inset: 0; pointer-events: none;
+  transition: all 0.7s ease; z-index: 0;
 }
-.hero-overlay {
-  position: absolute; inset: 0; transition: background 0.8s ease;
-  z-index: 1; backdrop-filter: blur(1px);
+.hero-emojis {
+  position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 1;
+}
+.hero-emoji {
+  position: absolute;
 }
 .hero-content {
   position: relative; z-index: 2; text-align: center;
@@ -118,7 +125,6 @@ input:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
 .hero-dot {
   height: 8px; border-radius: 4px; border: none; cursor: pointer;
   transition: all .35s cubic-bezier(.4, 0, .2, 1);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
 }
 
 .hero-progress {
