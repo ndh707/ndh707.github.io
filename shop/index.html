@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>하루 haru — Korean Beauty & Snacks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- CART NOTIFICATION -->
+  <div id="cart-notif" class="cart-notif">✓ Added to cart</div>
+
+  <!-- ORDER PLACED OVERLAY -->
+  <div id="order-overlay" class="order-overlay">
+    <div class="order-emoji">🎉</div>
+    <h2 class="order-title">Order Placed!</h2>
+    <p class="order-text">Thank you for shopping with us. Your glow journey begins!</p>
+  </div>
+
+  <!-- SCROLL ANCHOR -->
+  <div id="top-anchor"></div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-left">
+      <div class="logo nav-link" onclick="goShop()">
+        <span class="logo-kr">하루</span>
+        <span class="logo-en">haru</span>
+      </div>
+      <nav class="header-nav">
+        <span id="nav-shop" class="nav-link active" onclick="goShop()">Shop</span>
+        <span class="nav-link" onclick="goShop(); setCategory('snacks')">Snacks</span>
+        <span class="nav-link" onclick="goShop(); setCategory('gift-box')">Gift Boxes</span>
+      </nav>
+    </div>
+    <div class="header-right">
+      <div class="search-wrap">
+        <input id="search-input" type="text" placeholder="Search products..." oninput="handleSearch(this.value)" />
+        <span class="search-icon">⌕</span>
+      </div>
+      <div class="cart-icon-wrap nav-link" onclick="setView('cart')">
+        🛒
+        <span id="cart-badge" class="cart-badge hidden">0</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO CAROUSEL -->
+  <section id="hero-section" class="hero-section">
+    <div id="hero-backgrounds"></div>
+    <div id="hero-overlay" class="hero-overlay"></div>
+    <div id="hero-content" class="hero-content"></div>
+    <button class="arrow-btn arrow-prev" onclick="heroPrev()">‹</button>
+    <button class="arrow-btn arrow-next" onclick="heroNext()">›</button>
+    <div id="hero-dots" class="hero-dots"></div>
+    <div id="hero-progress" class="hero-progress"></div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="site-main">
+    <!-- SHOP VIEW -->
+    <div id="view-shop">
+      <!-- Category pills -->
+      <div class="category-pills-wrap">
+        <div id="category-row" class="category-pills-row"></div>
+        <button id="more-categories-btn" class="more-categories-btn hidden" onclick="toggleCategoryExpand()">More categories ↓</button>
+      </div>
+      <p id="search-info" class="search-info hidden"></p>
+      <div id="product-grid" class="product-grid"></div>
+      <div id="no-results" class="no-results hidden">
+        <p class="no-results-emoji">🔍</p>
+        <p class="no-results-text">No products found. Try a different search or category.</p>
+      </div>
+    </div>
+
+    <!-- PRODUCT DETAIL VIEW -->
+    <div id="view-product" class="product-detail hidden"></div>
+
+    <!-- CART VIEW -->
+    <div id="view-cart" class="cart-view hidden"></div>
+
+    <!-- CHECKOUT VIEW -->
+    <div id="view-checkout" class="checkout-view hidden"></div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p class="footer-logo">하루 <span class="accent">haru</span></p>
+    <p class="footer-tagline">Authentic Korean Beauty & Snacks · Vancouver, BC</p>
+    <p class="footer-copy">© 2026 Haru Beauty. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
