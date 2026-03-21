@@ -31,10 +31,11 @@
       <nav class="header-nav">
         <span id="nav-shop" class="nav-link active" onclick="goShop()">Shop</span>
         <span class="nav-link" onclick="goShop(); setCategory('snacks')">Snacks</span>
-        <span class="nav-link" onclick="goShop(); setCategory('gift-box')">Gift Boxes</span>
+        <span class="nav-link" onclick="goShop(); setCategory('gift-box')">Sets</span>
       </nav>
     </div>
     <div class="header-right">
+      <button class="search-toggle nav-link" onclick="toggleMobileSearch()" aria-label="Search">⌕</button>
       <div class="search-wrap">
         <input id="search-input" type="text" placeholder="Search products..." oninput="handleSearch(this.value)" />
         <span class="search-icon">⌕</span>
@@ -45,6 +46,9 @@
       </div>
     </div>
   </header>
+  <div id="mobile-search-bar" class="mobile-search-bar hidden">
+    <input id="mobile-search-input" type="text" placeholder="Search products..." oninput="handleSearch(this.value)" />
+  </div>
 
   <!-- HERO CAROUSEL -->
   <section id="hero-section" class="hero-section">

@@ -62,7 +62,7 @@ const CATEGORIES = ["all", "cleanser", "toner", "essence", "serum", "moisturizer
 const CATEGORY_LABELS = {
   all: "All", cleanser: "Cleansers", toner: "Toners", essence: "Essences",
   serum: "Serums", moisturizer: "Moisturizers", sunscreen: "Sunscreen", mask: "Masks",
-  snacks: "Snacks", "gift-box": "Gift Boxes",
+  snacks: "Snacks", "gift-box": "Sets",
 };
 
 const BADGE_COLORS = {
@@ -605,8 +605,21 @@ function goShop() {
 
 function handleSearch(value) {
   state.searchQuery = value;
+  // Keep both inputs in sync
+  const desktop = document.getElementById("search-input");
+  const mobile = document.getElementById("mobile-search-input");
+  if (desktop.value !== value) desktop.value = value;
+  if (mobile.value !== value) mobile.value = value;
   if (state.view !== "shop") goShop();
   else renderShop();
+}
+
+function toggleMobileSearch() {
+  const bar = document.getElementById("mobile-search-bar");
+  const isHidden = bar.classList.toggle("hidden");
+  if (!isHidden) {
+    document.getElementById("mobile-search-input").focus();
+  }
 }
 
 // =============================================================================
