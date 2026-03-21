@@ -206,9 +206,8 @@ function renderHeroSlide() {
 
   // Content with fresh animation
   const content = document.getElementById("hero-content");
+  content.style.opacity = "0";
   content.style.animation = "none";
-  content.offsetHeight; // force reflow
-  content.style.animation = "heroFadeIn .55s cubic-bezier(.25,.46,.45,.94) both";
   content.innerHTML = `
     <p class="hero-tagline" style="color:${accent}">${slide.tagline}</p>
     <h1 class="hero-title">${slide.titleHtml(accent)}</h1>
@@ -225,6 +224,9 @@ function renderHeroSlide() {
       `).join("")}
     </div>
   `;
+  content.offsetHeight;
+  content.style.opacity = "";
+  content.style.animation = "heroFadeIn .55s cubic-bezier(.25,.46,.45,.94) both";
 
   // Dots
   const dotsEl = document.getElementById("hero-dots");

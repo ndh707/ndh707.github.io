@@ -30,7 +30,7 @@ input:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
 @keyframes slideIn { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
 @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); } }
 @keyframes notifIn { from { opacity: 0; transform: translateY(-10px) scale(.95); } to { opacity: 1; transform: translateY(0) scale(1); } }
-@keyframes heroFadeIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes heroFadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes progressBar { from { width: 0%; } to { width: 100%; } }
 @keyframes floatEmoji0 { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-12px) rotate(6deg); } }
 @keyframes floatEmoji1 { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-18px) rotate(-5deg); } }
@@ -47,7 +47,7 @@ input:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
 .header-left { display: flex; align-items: center; gap: 36px; }
 .logo { display: flex; align-items: center; cursor: pointer; text-decoration: none; }
 .logo-img { height: 44px; width: auto; max-width: 120px; object-fit: contain; display: block; }
-.header-nav { display: flex; gap: 28px; font-size: 13px; font-weight: 500; color: var(--text-muted); letter-spacing: .8px; text-transform: uppercase; }
+.header-nav { display: flex; gap: 44px; font-size: 13px; font-weight: 500; color: var(--text-muted); letter-spacing: .8px; text-transform: uppercase; }
 .header-right { display: flex; align-items: center; gap: 24px; }
 
 .search-wrap { position: relative; width: 220px; }
@@ -73,7 +73,7 @@ input:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
 /* ===== HERO CAROUSEL ===== */
 .hero-section {
   position: relative; height: 340px; overflow: hidden;
-  display: flex; align-items: center; justify-content: center;
+  display: flex; align-items: flex-start; justify-content: center;
   transition: background 0.7s ease;
 }
 .hero-pattern {
