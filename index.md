@@ -4,9 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am an undergraduate researcher at Simon Fraser University with broad interest in eXtended Reality (XR), Human-AI Interactions, and Accessibility, particularly building and evaluating XR & AI systems that enable novel interactions and improve human learning, creativity, and wellbeing.
-
-I work under the supervision of Dr. Lawrence Kim at Tangent Lab & ixLab and work closely with Dr. Wolfgang Stuerzlinger and Dr. Xing Dong Yang. I will be working with Dr. Parmit Chilana in the summer of 2026 through VPRI USRA.
+I am an undergraduate researcher at Simon Fraser University with broad interest in eXtended Reality (XR), Human-AI Interactions, and Accessibility, particularly building, evaluating, and studying XR & AI systems that enable novel interactions and augments human abilities and cognition. My current research explores how we can use these emerging technologies to better support people with ADHD.
 
 Additionally, I have had various non-research experience, including teaching, working with children/students with disabilities, SWE practicum at Amazon Web Services and technical internship at a local animation studio.
 

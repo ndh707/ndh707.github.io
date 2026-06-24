@@ -4,7 +4,7 @@ main:
     authors: "<strong>Alex Noh</strong>, Audrey Safikhani, Anjun Zhu, Wolfgang Stuerzlinger, Lawrence Kim"
     conference_short: "DIS '26"
     conference: "Designing Interactive Systems Conference <strong>(DIS)</strong>, 2026."
-    pdf: assets/files/dr_adhd.pdf
+    pdf: https://dl.acm.org/doi/10.1145/3800645.3813095
     code:
     bibtex:
     image:
@@ -33,7 +33,7 @@ in_submission:
     notes:
 
   - title: "Understanding the Effect of Diminished Reality Screen Filters"
-    authors: "<strong>Alex Noh</strong>, David Lindlbauer, Wolfgang Stuerzlinger"
+    authors: "Eneas Holanda Arrais, <strong>Alex Noh</strong>, David Lindlbauer, Wolfgang Stuerzlinger"
     conference_short: "In Submission"
     conference: "In submission."
     pdf:
