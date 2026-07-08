@@ -1,7 +1,7 @@
 main:
 
   - title: "Exploring Diminished Reality for Attention Support: A Co-Design Study with Students with ADHD"
-    authors: "<strong>Alex Noh</strong>, Audrey Safikhani, Anjun Zhu, Wolfgang Stuerzlinger, Lawrence Kim"
+    authors: "<strong>Alex Noh</strong>, Parastoo Safikhani, Anjun Zhu, Wolfgang Stuerzlinger, Lawrence Kim"
     conference_short: "DIS '26"
     conference: "Designing Interactive Systems Conference <strong>(DIS)</strong>, 2026."
     pdf: https://dl.acm.org/doi/10.1145/3800645.3813095
@@ -11,21 +11,21 @@ main:
     notes:
 
   - title: "SyncFeel: Wearable Multi-Modal Rhythm Stimulation for Attention Enhancement"
-    authors: "Sarah Jade Pratt, <strong>Alex Noh</strong>"
-    conference_short: UIST
-    conference: "ACM Symposium on User Interface and Software Technology <strong>(UIST)</strong> Student Innovation Contest, 2025."
+    authors: "Sarah Jade Pratt and <strong>Alex Noh</strong>"
+    conference_short: "UIST Adjunct '25"
+    conference: "ACM Symposium on User Interface and Software Technology Adjunct <strong>(UIST Adjunct)</strong>, 2025."
     pdf: https://dl.acm.org/doi/10.1145/3746058.3758974
     code:
     bibtex:
     image:
-    notes: UIST SIC Finalist [Top 10 Submissions]
+    notes: SIC Finalist
 
 in_submission:
 
   - title: "Inception: Aligning Agent and Human Memory Through Consolidation for Always-on AI Wearables"
     authors: "Anjun Zhu, <strong>Alex Noh</strong>, Lawrence Kim"
     conference_short: "In Submission"
-    conference: "In submission."
+    conference: "In submission, 2026."
     pdf: assets/files/inception.pdf
     code:
     bibtex:
@@ -35,27 +35,37 @@ in_submission:
   - title: "Understanding the Effect of Diminished Reality Screen Filters"
     authors: "Eneas Holanda Arrais, <strong>Alex Noh</strong>, David Lindlbauer, Wolfgang Stuerzlinger"
     conference_short: "In Submission"
-    conference: "In submission."
+    conference: "In submission, 2026."
     pdf:
     code:
     bibtex:
     image:
     notes:
 
-  - title: "Investigating AI-supported Scholarly Reading for Scholars with ADHD"
+  - title: "Selective Co-presence: Diminishing Co-presence for Attention Support for Adults with ADHD"
+    authors: "<strong>Alex Noh</strong>, Anjun Zhu, Duc Ahn Nguyen, Wolfgang Stuerzlinger, Lawrence Kim"
+    conference_short: "In Preparation"
+    conference: "In preparation, 2026."
+    pdf:
+    code:
+    bibtex:
+    image:
+    notes:
+
+  - title: "Investigating AI-supported Reading for Scholars with ADHD"
     authors: "<strong>Alex Noh</strong>, Parmit Chilana"
     conference_short: "In Preparation"
-    conference: "In preparation."
+    conference: "In preparation, 2026."
     pdf:
     code:
     bibtex:
     image:
     notes:
 
-  - title: "Abstracted Presence: Diminishing Co-Present People for Attention Support in Mixed Reality"
-    authors: "<strong>Alex Noh</strong>, Anjun Zhu, Duc Ahn Ngyuen, Wolfgang Stuerzlinger, Lawrence Kim"
+  - title: "Solaris: Collaborative Memory for Wearable Agents through Scope Reconciliation"
+    authors: "Anjun Zhu*, <strong>Alex Noh</strong>*, Oliver Lim, Lawrence Kim"
     conference_short: "In Preparation"
-    conference: "In preparation."
+    conference: "In preparation, 2026."
     pdf:
     code:
     bibtex:
