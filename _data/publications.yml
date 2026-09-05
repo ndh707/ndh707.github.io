@@ -1,5 +1,15 @@
 main:
 
+  - title: "Understanding the Effect of Diminished Reality Screen Filters"
+    authors: "Eneas Holanda Arrais, <strong>Alex Noh</strong>, David Lindlbauer, Wolfgang Stuerzlinger"
+    conference_short: "VRST '26"
+    conference: "ACM Symposium on Virtual Reality Software and Technology <strong>(VRST)</strong>, 2026."
+    pdf:
+    code:
+    bibtex:
+    image:
+    notes: Conditionally Accepted
+
   - title: "Exploring Diminished Reality for Attention Support: A Co-Design Study with Students with ADHD"
     authors: "<strong>Alex Noh</strong>, Parastoo Safikhani, Anjun Zhu, Wolfgang Stuerzlinger, Lawrence Kim"
     conference_short: "DIS '26"
@@ -27,16 +37,6 @@ in_submission:
     conference_short: "In Submission"
     conference: "In submission, 2026."
     pdf: assets/files/inception.pdf
-    code:
-    bibtex:
-    image:
-    notes:
-
-  - title: "Understanding the Effect of Diminished Reality Screen Filters"
-    authors: "Eneas Holanda Arrais, <strong>Alex Noh</strong>, David Lindlbauer, Wolfgang Stuerzlinger"
-    conference_short: "In Submission"
-    conference: "In submission, 2026."
-    pdf:
     code:
     bibtex:
     image:
