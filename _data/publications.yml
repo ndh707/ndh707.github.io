@@ -4,11 +4,11 @@ main:
     authors: "Eneas Holanda Arrais, <strong>Alex Noh</strong>, David Lindlbauer, Wolfgang Stuerzlinger"
     conference_short: "VRST '26"
     conference: "ACM Symposium on Virtual Reality Software and Technology <strong>(VRST)</strong>, 2026."
-    pdf:
+    pdf: https://dl.acm.org/doi/10.1145/3822517.3848723
     code:
     bibtex:
     image:
-    notes: Conditionally Accepted
+    notes:
 
   - title: "Exploring Diminished Reality for Attention Support: A Co-Design Study with Students with ADHD"
     authors: "<strong>Alex Noh</strong>, Parastoo Safikhani, Anjun Zhu, Wolfgang Stuerzlinger, Lawrence Kim"
@@ -32,38 +32,38 @@ main:
 
 in_submission:
 
+  - title: "Investigating AI-supported Reading for Scholars with ADHD"
+    authors: "<strong>Alex Noh</strong>, Parmit Chilana"
+    conference_short: "Under Review"
+    conference: "Under review, CHI 2027."
+    pdf:
+    code:
+    bibtex:
+    image:
+    notes:
+
   - title: "Inception: Aligning Agent and Human Memory Through Consolidation for Always-on AI Wearables"
     authors: "Anjun Zhu, <strong>Alex Noh</strong>, Lawrence Kim"
-    conference_short: "In Submission"
-    conference: "In submission, 2026."
+    conference_short: "In Revision"
+    conference: "In revision, 2026."
     pdf: assets/files/inception.pdf
     code:
     bibtex:
     image:
     notes:
 
+  - title: "TangiTinker: AI-Assisted End-User Tinkering with Interactive Tangibles"
+    authors: "David Wong-Aitken, <strong>Alex Noh</strong>, Sheelagh Carpendale, Parmit Chilana"
+    conference_short: "In Revision"
+    conference: "In revision, 2026."
+    pdf:
+    code:
+    bibtex:
+    image:
+    notes:
+
   - title: "Selective Co-presence: Diminishing Co-presence for Attention Support for Adults with ADHD"
-    authors: "<strong>Alex Noh</strong>, Anjun Zhu, Duc Ahn Nguyen, Wolfgang Stuerzlinger, Lawrence Kim"
-    conference_short: "In Preparation"
-    conference: "In preparation, 2026."
-    pdf:
-    code:
-    bibtex:
-    image:
-    notes:
-
-  - title: "Investigating AI-supported Reading for Scholars with ADHD"
-    authors: "<strong>Alex Noh</strong>, Parmit Chilana"
-    conference_short: "In Preparation"
-    conference: "In preparation, 2026."
-    pdf:
-    code:
-    bibtex:
-    image:
-    notes:
-
-  - title: "Solaris: Collaborative Memory for Wearable Agents through Scope Reconciliation"
-    authors: "Anjun Zhu*, <strong>Alex Noh</strong>*, Oliver Lim, Lawrence Kim"
+    authors: "<strong>Alex Noh</strong>, Anjun Zhu, Duc Anh Nguyen, Wolfgang Stuerzlinger, Lawrence Kim"
     conference_short: "In Preparation"
     conference: "In preparation, 2026."
     pdf:

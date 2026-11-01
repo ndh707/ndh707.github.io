@@ -3,13 +3,18 @@ title: Alex Noh
 alternate_name: Heesuk Noh
 position: Undergraduate Researcher
 affiliation: Simon Fraser University
+affiliation_link: https://www.sfu.ca/
 email: hna57 (at) sfu.ca
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
 keywords: Alex Noh, Heesuk Noh, human-computer interaction, human-AI interaction, extended reality, accessibility, ADHD
-description: Alex Noh, also known as Heesuk Noh, is an HCI researcher at Simon Fraser University studying human-AI interaction, XR, and cognitive accessibility.
-canonical: https://ndh707.github.io/
+description: Alex Noh (Heesuk Noh) is a Computing Science undergraduate researcher at Simon Fraser University studying human-AI interaction, XR, and cognitive accessibility.
+url: https://ndh707.github.io
+baseurl: ""
+lang: en-CA
+# Add the verification token from Google Search Console when available.
+google_site_verification:
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
@@ -19,9 +24,9 @@ linkedin: https://www.linkedin.com/in/alex-noh-0739a2159/
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/profile.jpeg
-favicon: ./assets/img/favicon.png
-favicon_dark: ./assets/img/favicon-dark.png
+avatar: /assets/img/profile.jpeg
+favicon: /assets/img/favicon.png
+favicon_dark: /assets/img/favicon-dark.png
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
