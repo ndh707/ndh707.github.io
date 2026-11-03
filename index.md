@@ -21,4 +21,6 @@ At SFU, I work with Lawrence Kim, Wolfgang Stuerzlinger, and Parmit Chilana. I a
 
 {% include_relative _includes/publications.md %}
 
+{% include other-research.html %}
+
 <!-- {% include_relative _includes/services.md %} -->

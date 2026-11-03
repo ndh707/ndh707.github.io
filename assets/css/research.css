@@ -1,0 +1,83 @@
+.site-name {
+  color: inherit;
+}
+
+.research-nav {
+  margin-bottom: 1.5rem;
+}
+
+.research-project h1 {
+  line-height: 1.2;
+}
+
+.research-project h2 {
+  margin-top: 1.75rem;
+}
+
+.research-authors {
+  margin-bottom: 0.5rem;
+}
+
+.research-status {
+  margin-bottom: 1rem;
+}
+
+.research-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.research-links a {
+  border: 1px solid currentColor;
+  padding: 0.2rem 0.65rem;
+}
+
+.poster-preview {
+  display: block;
+}
+
+.poster-preview img,
+.other-research-poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.other-research-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0 15px 0 20px;
+}
+
+.other-research-poster {
+  flex: 0 0 160px;
+  margin-top: 0.3rem;
+}
+
+.other-research-row > div {
+  min-width: 0;
+}
+
+.other-research-row .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .other-research-row {
+    flex-direction: column;
+  }
+
+  .other-research-poster {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 320px;
+  }
+}

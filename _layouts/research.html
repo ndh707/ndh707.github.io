@@ -1,0 +1,41 @@
+---
+layout: homepage
+---
+{% assign projects = site.data.publications.main | concat: site.data.publications.in_submission | concat: site.data.publications.other_research %}
+{% assign project = projects | where: 'id', page.project_id | first %}
+
+<nav class="research-nav" aria-label="Research navigation">
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <span aria-hidden="true"> / </span>
+  <a href="{{ '/research/' | relative_url }}">All Research</a>
+</nav>
+
+<article class="research-project">
+  <h1>{{ page.title | escape }}</h1>
+  {% if project.authors %}
+  <p class="research-authors">{{ project.authors }}</p>
+  {% endif %}
+  {% unless project.poster_image %}
+  <p class="research-status"><em>{{ project.conference }}</em>{% if project.notes %} <strong>{{ project.notes }}</strong>{% endif %}</p>
+  {% endunless %}
+  {% if project.pdf or project.code or project.bibtex %}
+  <p class="research-links">
+    {% if project.pdf %}<a href="{{ project.pdf | relative_url }}">Paper</a>{% endif %}
+    {% if project.code %}<a href="{{ project.code | relative_url }}">Code</a>{% endif %}
+    {% if project.bibtex %}<a href="{{ project.bibtex | relative_url }}">BibTeX</a>{% endif %}
+  </p>
+  {% endif %}
+
+  {{ content }}
+
+  {% if project.poster_image %}
+  <h2 id="workshop-poster">Workshop Poster</h2>
+  <p><strong>{{ project.poster_title | escape }}</strong><br>
+  {{ project.poster_authors }}</p>
+  <p class="research-status"><em>{{ project.conference }}</em></p>
+  <p><a href="{{ project.poster_image | relative_url }}">Poster</a></p>
+  <a href="{{ project.poster_image | relative_url }}" class="poster-preview">
+    <img src="{{ project.poster_image | relative_url }}" alt="{{ project.poster_title | escape }} — workshop poster" width="2500" height="1768" loading="lazy" decoding="async">
+  </a>
+  {% endif %}
+</article>

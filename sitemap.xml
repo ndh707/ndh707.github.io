@@ -9,4 +9,11 @@ layout: null
   <url>
     <loc>{{ site.cv_link | absolute_url | xml_escape }}</loc>
   </url>
+  {% for research_page in site.pages %}
+  {% if research_page.url contains '/research/' %}
+  <url>
+    <loc>{{ research_page.url | absolute_url | xml_escape }}</loc>
+  </url>
+  {% endif %}
+  {% endfor %}
 </urlset>

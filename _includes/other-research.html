@@ -1,0 +1,30 @@
+{% if site.data.publications.other_research %}
+<h2 id="other-research" style="margin: 25px 0px -15px;">Other Research</h2>
+
+<div class="publications">
+  <ol class="bibliography">
+    {% for project in site.data.publications.other_research %}
+    <li>
+      <div class="other-research-row">
+        {% if project.poster_image %}
+        <a href="{{ project.poster_image | relative_url }}" class="other-research-poster" aria-label="View poster: {{ project.poster_title | escape }}">
+          <img src="{{ project.poster_image | relative_url }}" alt="{{ project.poster_title | escape }}" width="2500" height="1768" loading="lazy" decoding="async">
+        </a>
+        {% endif %}
+        <div>
+          <div class="title"><a href="{{ project.page | relative_url }}">{{ project.poster_title | default: project.title | escape }}</a></div>
+          <div class="author">{{ project.poster_authors | default: project.authors }}</div>
+          <div class="periodical"><em>{{ project.conference }}</em></div>
+          <div class="links">
+            {% if project.poster_image %}<a href="{{ project.poster_image | relative_url }}" class="btn btn-sm z-depth-0">Poster</a>{% endif %}
+            <a href="{{ project.page | relative_url }}" class="btn btn-sm z-depth-0">Overview</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</div>
+
+<p><a href="{{ '/research/' | relative_url }}">Browse all research projects &rarr;</a></p>
+{% endif %}
